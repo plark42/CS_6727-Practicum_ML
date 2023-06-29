@@ -20,6 +20,8 @@ for d in os.listdir('plaintext'):
 
     #get each plaintext file in this directory
     for f in os.listdir(inpath):
+        if '.DS_Store' in f: 
+            continue
         infile = os.path.join(inpath, f)
         outfile = os.path.join(outpath, f + '.cha')
         cmd = 'openssl enc -chacha -pass pass:%s -nosalt -in %s -out %s' % (KEY, infile, outfile)

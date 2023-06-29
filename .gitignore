@@ -1,6 +1,6 @@
 *.aes
-*.csv
 *.apk
+features.csv
 *.app
 *.bf
 *.cha
