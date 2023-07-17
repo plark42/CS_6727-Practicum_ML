@@ -8,8 +8,8 @@ for i in `ls plaintext`; do
     echo $p $e $a $b $c;
 
     #run python code to generate data 
-    python3 make_csv.py $p 0 $a;
-    python3 make_csv.py $e 1 $b;
+    python3 make_csv_filename.py $p 0 $a;
+    python3 make_csv_filename.py $e 1 $b;
 
     #remove header row before concatenating
     sed -i '' "1d" $b
